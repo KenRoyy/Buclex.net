@@ -1,0 +1,179 @@
+/* fonts */
+    /* anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background: #000;
+}
+
+.capa{
+    height: 590px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.header-background{
+    justify-content: center;
+    background-image: url(../img/andromeda/wp2707941-saturn-hd-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 589px;
+}
+
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* border: 1px solid #fff; */
+    /* background: #000; */
+    position: relative;
+    z-index: 2;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+.logo h1{
+    font-size: 40px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #777
+}
+
+
+.showcase{
+    width: 100%;
+    height:520px;
+    /* border: 1px solid #fff; */
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15%;
+}
+.showcase h2{
+    font-size: 50px;
+}
+
+.showcase p{
+    font-size: 20px;
+}
+
+.contenido-noticias{
+    width: 100%;
+    height: 400px;
+    /* background: #000; */
+    /* border: 1px solid #fff; */
+}
+
+.news{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+/* texto animado */
+.news h2{
+    font-weight:lighter;
+    font-size: 60px;
+    position: relative;
+    right: 1000px; 
+    height: 70px;
+    width: 1000px;
+    font-family: 'Anton', sans-serif;
+    color: #ddd;
+    /* border: solid 1px #fff; */
+    text-transform: uppercase;
+    transition: 1s;
+}
+.anim-text{
+    color: #633 !important;
+    right: 0 !important;
+}
+/* end texto animado */
+
+.noticias-recientes{
+    padding-bottom: 5%;
+    display:flex;
+}
+
+.bloke-1{
+    padding-right: 4%;
+    height: 300px;
+    width: 380px;
+    /* border: solid 1px #fff; */
+    display: flex;
+    flex-direction: column;
+}
+
+.bloke-1 img{
+    height: 200px;
+    width: 350px;
+    border: none;
+}
+
+.fecha{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 7%;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer span{
+    color: #bbb;
+}
+
+.icons{
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-right: 40%;
+    padding-left: 40%;
+}
