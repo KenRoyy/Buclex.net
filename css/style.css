@@ -182,7 +182,7 @@ header nav ul li a:hover{
 }
 
 /* anim text content */
-#span-anim{
+#span-anim{ 
     color: #000;
     transition: 1s;
 }

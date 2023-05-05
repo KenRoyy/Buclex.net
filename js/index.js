@@ -2,7 +2,7 @@
 let animado = document.querySelector('#text');
 let span_anim = document.querySelector('#span-anim');
 let title_anim = document.querySelector('#span-anim h3');
-
+ 
 console.log(title_anim);
 
 function animText(animado,anim) {   
