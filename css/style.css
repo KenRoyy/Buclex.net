@@ -99,7 +99,7 @@ header nav ul li a:hover{
 
 .contenido-noticias{
     width: 100%;
-    height: 500px;
+    height: 550px;
     /* background: #000; */
     /* border: 1px solid #fff; */
     padding-left: 5%;
@@ -130,25 +130,27 @@ header nav ul li a:hover{
 /* end texto anim */
 
 .noticias-recientes{
-    padding-bottom: 5%;
     display:flex;
     justify-content: space-between;
 }
 
 .bloke-1{
-    height: 400px;
-    width: 100%;
+    padding: 0;
+    width: 32%;
     /* border: solid 1px #fff; */
     display: flex;
     flex-direction: column;
-    padding-right: 2%;
 }
 
 .bloke-1 img{
     height: 220px;
-    width: 400px;
+    width: 100%;
     /* border: 3px solid #fff; */
     background: #633;
+}
+
+.bloke-1 h3{
+    font-weight: lighter;
 }
 
 .fecha{
@@ -157,14 +159,45 @@ header nav ul li a:hover{
     padding-right: 50%;
     display: flex;
     justify-content: space-between;
+    font-weight: bolder;
 }
+
+.contenido-segundario{
+    width: 100%;
+    height: 300px;
+
+    padding-left: 5%;
+    padding-right: 35%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    background-image: url(../img/content/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position: right;
+    /* background-size: cover; */
+    background-size: contain;
+
+    text-align: left;
+}
+
+/* anim text content */
+#span-anim{
+    color: #000;
+    transition: 1s;
+}
+.anim_span{
+    color: #fff !important
+}
+/* end anim text content */
 
 footer{
     height: 80px;
     width: 100%;
     padding-top: 2%;
     padding-bottom: 7%;
-    background: #333;
+    /* background: #333; */
+    background: #000;
     display: flex;
     flex-direction: column;
     text-align: center;
