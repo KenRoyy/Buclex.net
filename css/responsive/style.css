@@ -1,0 +1,9 @@
+@media (max-width: 1400px) {
+    .bloke-1{
+        max-width: 380px;
+    }
+    .contenido-segundario{
+        max-height: 300px;
+        font-size: 15px;
+    }
+}
