@@ -17,18 +17,24 @@
         <nav>
           <!-- logo -->
           <div class="logo">
-            <h1>BUC<b style="color: #aaa">LEX</b></h1>
+            <h1><a href="index.html" style="color: rgb(245, 103, 100);">BUC<b style="color: rgb(228, 214, 178)">LEX</a></b></h1>
           </div>
           <!-- menu -->
-          <ul>
+          <div class="nav-menu"> <!--clase sin usar en css-->
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sercvicios.html">netflix<b style="color: #f3f">+</b>prime</a></li>
+              <li><a href="blog.html">blog</a></li>
+            </ul>
+          </div>
+          <div class="toggle-btn">
+             <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown-menu">
             <li><a href="index.html">Inicio</a></li>
-            <li>
-              <a href="sercvicios.html"
-                >netflix<b style="color: #f3f">+</b>prime</a
-              >
-            </li>
+            <li><a href="sercvicios.html">netflix<b style="color: #f3f">+</b>prime</a></li>
             <li><a href="blog.html">blog</a></li>
-          </ul>
+          </div>
         </nav>
       </header>
       <!-- slider <div class="swiper">
@@ -47,11 +53,13 @@
       <!-- showcase -->
       <div class="showcase" id="slider">
         <div>
-          <h2>BIENVENIDO</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora sit magnam unde itaque mollitia vel eius? Illo, delectus id magni iusto deleniti iste amet eius nemo facere culpa mollitia?
-          </p>
-        </div>
+          <h2><a href="#">BIENVENIDO</a></h2>
+            <p>
+              ¡Te damos la bienvenida a nuestro sitio web!
+              <br>
+              Explora y descuibre nuestros servicios, tendras una experiencia unica con nosotros
+            </p>
+          </div>
       </div>
 
       <!-- opacidad  -->
@@ -60,19 +68,37 @@
     </div>
     <!-- end header -->
 
+    <!-- travelin -->
+    <div class="travelin">
+      <div>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+      </div>
+      <div>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+        <span>buclex</span>
+      </div>
+    </div>
+    <!-- end travelin -->
+
     <!-- containr -->
     <div class="contenido-noticias">
-      <h2 class="" id="text">noticias recientes</h2>
+      <h2 class="" id="text">noticias</h2>
       <div class="noticias-recientes">
         <div class="bloke-1">
           <img src="img/hades game/4870509.jpg" />
           <div class="fecha">
             <span>08/02/2023</span>
-            <span>categoria</span>
+            <span>Blog</span>
           </div>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            corporis?
+            nuevo enlace en el menu de inicio
           </h3>
         </div>
         <div class="bloke-1">
@@ -83,7 +109,6 @@
           </div>
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            corporis?
           </h3>
         </div>
         <div class="bloke-1">
@@ -94,7 +119,6 @@
           </div>
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            corporis?
           </h3>
         </div>
       </div>
@@ -102,7 +126,7 @@
 
     <div class="contenido-segundario">
       <span id="span-anim">
-        <h3 ` id="span-anim">title</h3>
+        <h3 id="span-anim">title</h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque atque
         molestias in provident pariatur impedit obcaecati tenetur, earum quia
         aliquam placeat similique excepturi cumque quas maxime quo odio tempora.
@@ -125,8 +149,6 @@
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- slider js -->
-    <script src="js/slider.js"></script>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/d8cc8dd170.js"
@@ -134,5 +156,8 @@
     ></script>
     <!-- default js -->
     <script src="js/index.js"></script>
+    <!-- pruebas -->
+    <script src="js/pruebas/prueba.js"></script>
+    <script src="js/pruebas/removeID.js"></script>
   </body>
 </html>

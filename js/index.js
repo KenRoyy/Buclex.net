@@ -1,27 +1,23 @@
 // const animado = document.querySelector('.news-animado');
 let animado = document.querySelector('#text');
-let span_anim = document.querySelector('#span-anim');
-let title_anim = document.querySelector('#span-anim h3');
- 
-console.log(title_anim);
+let bloke1 = document.querySelector('.bloke-1');
+let bloke2 = document.querySelector('.bloke-1:nth-child(2)');
+let bloke3 = document.querySelector('.bloke-1:nth-child(3)');
 
-function animText(animado,anim) {   
+
+function anim(animado,anim) {   
     window.addEventListener("scroll", ()=>{
         let pantalla = window.innerHeight;
         let ubicacion = animado.getBoundingClientRect().top;
         
-        // console.log(pantalla ,ubicacion);
-        
         if(ubicacion <= pantalla){
             // animado.classList.add('anim-text');
-            animado.classList.add(anim)
-            console.log('cambio de color?');
+            animado.classList.add(anim);
         }
     })
 }
 
-animText(animado,'anim-text')
-animText(span_anim,'anim_span')
-animText(title_anim, 'anim_span')
-
-
+anim(animado,'anim-text');
+anim(bloke1,'start');
+anim(bloke2,'start');
+anim(bloke3,'start');
