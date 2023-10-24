@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
   /* Bold 700 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); 
+  /* IBM Plex Sans Regular 400  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 * {
   margin: 0;
@@ -125,7 +127,8 @@ header nav {
 
 .showcase {
   width: auto;
-  height: 93vh;
+  /* height: 93vh; */
+  height: 500px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -135,7 +138,8 @@ header nav {
 }
 .showcase div{
   width: 100%;
-  padding-top: 19rem;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .showcase h2 a{
@@ -212,15 +216,9 @@ header nav {
 /* news */
 .contenido-noticias {
   width: 100%;
-  height: 600px;
+  height: 500px;
   max-height: 650px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 0;
-  padding-bottom: 1rem;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* background-color: rgb(27, 29, 31); */
+  padding: 0 5%;
   background-color: #000;
 } 
 
@@ -232,8 +230,8 @@ header nav {
   position: relative;
   right: 1000px;
   height: 100px;
-  width: 700px;
-  max-width: 700px;
+  width: 400px;
+  max-width: 500px;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   transition: 1s;
@@ -248,7 +246,6 @@ header nav {
 .noticias-recientes {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: auto;
 }
@@ -259,6 +256,8 @@ header nav {
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: lighter;
 }
 .start{
   animation: bloke1-anim 0.5s linear forwards;
@@ -284,9 +283,10 @@ header nav {
   z-index: 0;
 }
 
-.bloke-1 h3 {
+/* .bloke-1 h3 {
   font-weight: lighter;
-}
+  font-family: 'IBM Plex Sans', sans-serif;
+} */
 
 .fecha {
   padding-top: 5%;
@@ -333,6 +333,8 @@ header nav {
   display: block;
   font-size: 20px;
   color: rgb(245, 103, 100) !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
 }
 /* end anim text content */
 
@@ -345,6 +347,8 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: lighter;
 }
 
 footer span {
