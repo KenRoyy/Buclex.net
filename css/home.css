@@ -130,29 +130,36 @@ header nav {
 
 /*--- showcase ---*/
 .showcase {
-  display: flex;
   width: auto;
   height: 700px;
-  text-align: center;
   position: relative;
   z-index: 2;
   padding-left: 5%;
   padding-right: 5%;
-  align-items: center;
-  justify-content: center;
 }
-.showcase h2 a{
+.showcase .contentShowcase{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+}
+.textShowcase{
+  text-align: center;
+  align-items: center;
+}
+.textShowcase h2 a{
   font-size: 3rem;
   font-family: 'Belanosima', sans-serif;
   animation: anim-showcase-text 2s forwards;
   transition: 1s;
-  display: inline-block;
   color: rgb(300,300,300);
 }
-.showcase h2 a:hover{
-   font-size: 4rem;
+.textShowcase h2 a:hover{
+   font-size: 3rem;
 }
-.showcase div p {
+.textShowcase h3 {
+  margin-top: 25px;
   color: rgb(300, 300, 300, 0.8);
   font-size: 1.5rem;
   font-family: 'Belanosima', sans-serif;

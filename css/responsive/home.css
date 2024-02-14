@@ -1,24 +1,33 @@
 @media (max-width: 1400px) {
+  /* showcase */
+  .textShowcase h2 a{
+    font-size: 2rem;
+  }
 
   /* contacto */
   .contacto{
     display: none;
   }
-
+  
+  /* contenido segundario */
+  .informacion{
+    padding: 0 3rem;
+  } 
+  .contenido-segundario div h3{
+    font-size: 2rem;
+  }
+  .contenido-segundario div div span{
+    font-size: 1.7rem;
+  }
+  
   /* footer */
-  .footerContent{
-    padding: 0;
-    grid-template-columns: 346px 346px;
-    display: none;
+  footer{
+    background: #202020;
+    height: 215px;
   }
-
-  .contenido-segundario {
-    max-height: 300px;
-    font-size: 15px;
-  }
-  .anim_span {
-    font-size: 14px;
-    color: #fff;
+  footer .footerContent{
+    padding-left:  10rem;
+    padding-right: 10rem; 
   }
 }
 
