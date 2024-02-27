@@ -1,7 +1,16 @@
 @media (max-width: 1400px) {
   /* showcase */
+  .textShowcase{
+    margin: 0;
+  }
   .textShowcase h2 a{
     font-size: 2rem;
+  }
+  .textShowcase h2 a:hover{
+    font-size: 2.8rem;
+  }
+  .textShowcase h3{
+    font-size: 1.5rem;
   }
 
   /* contacto */
