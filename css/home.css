@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); 
   /* IBM Plex Sans Regular 400  */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+  /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   margin: 0;
@@ -31,29 +33,22 @@ body {
   opacity: 0.7;
 }
 .header-background {
-  /* background-image: url(../img/slider/wallpaperflare.com_wallpaper.jpg); */
-  background-image: url(../img/slider/4884841.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: auto;
   height: 90vh;
 }
 
 /* --- header ---*/
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 8px 18rem;
   position: relative;
   z-index: 2;
 }
-header nav {
-  display: flex;
+
+.navbar{
   align-items: center;
-  justify-content: space-between;
+  display: flex;
   font-weight: bold;
+  justify-content: space-between;
 }
 
 .logo h1 {
@@ -62,19 +57,17 @@ header nav {
   font-family: 'Open Sans', sans-serif;
   animation: nav-menu-text 500ms forwards;
 }
-.logo h1 a{
-  color: rgb(98, 172, 233);
-}
 
 .nav-menu ul li {
   display: inline-block;
   padding: 0px 2rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .nav-menu ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   animation: nav-menu-text 500ms forwards;
+  text-transform: capitalize;
 }
 @keyframes nav-menu-text{
   from{
@@ -87,92 +80,19 @@ header nav {
 
 .nav-menu ul li a{
   color: #eee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   transition: 200ms;
 }
 .nav-menu ul li a:hover {
-  font-size: 1.4rem;
-  color: #666;
+  color: #a34ff7;
 }
 
-.toggle-btn{
-  display: none;
-}
-
-.toggle-btn i{
-  color: #fff !important;
-} 
-.dropdown-menu{
-  display: none;
-  height: 0;
-  position: absolute;
-  right: 0;
-  top: 60px;
-  width: 100%;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 0.975); 
-  background-color:rgba(0, 0, 0, 0.2);
-}
-.open{
-  height: 125px;
-}
-.dropdown-menu li{
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.dropdown-menu li::hover{
-  background-color: rgb(0, 0, 0, 1);
-}
-
-/*--- showcase ---*/
-.showcase {
-  width: auto;
-  height: 700px;
-  position: relative;
-  z-index: 2;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.showcase .contentShowcase{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 70%;
-  width: 100%;
-}
-.textShowcase{
-  margin-top: 200px;
-  text-align: center;
-  align-items: center;
-}
-.textShowcase h2 a{
-  font-size: 3rem;
-  font-family: 'Belanosima', sans-serif;
-  animation: anim-showcase-text 2s forwards;
-  transition: 1s;
-  color: rgb(300,300,300);
-}
-.textShowcase h2 a:hover{
-   font-size: 4rem;
-}
-.textShowcase h3 {
-  margin-top: 25px;
-  color: rgb(300, 300, 300, 0.8);
-  font-size: 1.5rem;
-  font-family: 'Belanosima', sans-serif;
-  animation: anim-showcase-text 3s forwards;
-}
-@keyframes anim-showcase-text{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
+.btn-contact button{
+  height: 30px; 
+  width: 100px;
+  border-radius: 30px;
+  background-color: #a34ff7;
 }
 
 /*--- travelin ---*/

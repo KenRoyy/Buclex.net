@@ -1,0 +1,24 @@
+{
+  "name": "buclex-web-prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KenRoyy/Buclex-web-prueba.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KenRoyy/Buclex-web-prueba/issues"
+  },
+  "homepage": "https://github.com/KenRoyy/Buclex-web-prueba#readme",
+  "dependencies": {
+    "swiper": "^11.0.7"
+  }
+}
