@@ -39,7 +39,7 @@ body {
 
 /* --- header ---*/
 header {
-  padding: 8px 18rem;
+  padding: 18px 18rem;
   position: relative;
   z-index: 2;
 }
@@ -93,6 +93,13 @@ header {
   width: 100px;
   border-radius: 30px;
   background-color: #a34ff7;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.btn-contact button:hover{
+  background-color: #8034cc;
 }
 
 /*--- travelin ---*/

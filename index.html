@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BUCLEX</title>
+
+  <link rel="icon" href="data:,">
+
   <!-- custom css -->
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/slider.css">
@@ -23,7 +26,7 @@
         <div class="navbar logo nav-menu">
           <!-- logo -->
           <h1 style="color: #a34ff7;">BUC<b style="color: #fff">LEX</b></h1>
-        <!-- menu -->
+          <!-- menu -->
           <ul>
             <li><a href="index.html">inicio</a></li>
             <li><a href="index.html" onclick="message(event)">servicios</li>
@@ -45,7 +48,7 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="./img/slider/4884841.jpg" alt="">
+            <img src="./img/slider/pexels-photo-270637.jpeg" alt="">
           </div>
 
           <div>
@@ -60,14 +63,46 @@
   </div>
   <!-- end header -->
 
+  <!-- description section -->
+  <div style="
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff22;
+  padding: 5rem 0;
+  " 
+  id="title" 
+  >
+    <div style="text-align: center;"> 
+      <h3 style="color:#a34ff7; font-size: 2.5rem; font-family: 'Open Sans', sans-serif;">¿Por qué es importante que tu
+        empresa esté en la web?</h3>
+      <div style="text-align: center;
+      font-family: 'Open Sans', sans-serif; 
+      margin-top: 3rem;
+      display: none;
+      "
+      id="div" 
+      >
+        <h4 style="
+        font-size: 1.8rem; 
+        ">Presencia en línea </h4>
+        <p>
+          En un mundo cada vez más conectado, tener una presencia en línea es esencial
+          para que individuos y empresas sean encontrados y reconocidos en el vasto panorama de internet.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end description section -->
+
   <!-- travelin -->
-  <div class="travelin">
+  <!-- <div class="travelin">
     <div>
       <span>Soluciones a la Medida de tu empresa</span>
     </div>
     <div>
       <span>Soluciones a la Medida de tu empresa</span>
-    </div>
+    </div> -->
   </div>
   <!-- end travelin -->
 
@@ -232,6 +267,8 @@
   <script type="module" src="js/slider/swiper.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/d8cc8dd170.js" crossorigin="anonymous"></script>
+  <!-- section description -->
+  <script src="js/descriptionAnim.js"></script>
 </body>
 
 </html>
