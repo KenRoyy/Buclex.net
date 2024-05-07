@@ -19,9 +19,6 @@
     "url": "https://github.com/KenRoyy/Buclex-web-prueba/issues"
   },
   "homepage": "https://github.com/KenRoyy/Buclex-web-prueba#readme",
-  "dependencies": {
-    "swiper": "^11.0.7"
-  },
   "devDependencies": {
     "live-server": "^1.2.2"
   }

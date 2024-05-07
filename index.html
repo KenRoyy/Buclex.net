@@ -7,19 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BUCLEX</title>
 
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="./img/icon/buclexIcon2.ico">
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/slider.css">
-  <!-- pruebas -->
+  <!-- responsive css -->
   <link rel="stylesheet" href="css/responsive/home.css" />
-  <!-- swiper -->
-  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-  <!-- header -->
+  <!-- header  nav / modificar el div que contiene el navbar header-->
   <div class="header-background">
     <header>
       <nav>
@@ -30,7 +29,7 @@
           <ul>
             <li><a href="index.html">inicio</a></li>
             <li><a href="index.html" onclick="message(event)">servicios</li>
-            <li><a href="index.html">ayuda</a></li>
+            <li><a href="index.html">nuestros proyectos</a></li>
           </ul>
           <div class="btn-contact">
             <button>Contacto</button>
@@ -38,165 +37,239 @@
         </div>
       </nav>
     </header>
+  </div>
+  <!-- end header nav -->
 
-    <!-- slider -->
-    <div class="slider">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/slider/4884841.jpg" alt="">
-          </div>
+  <!-- slider -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slider-color">
+        <img src="./img/slider/pexels-photo-270637.jpeg" alt="">
+      </div>
 
-          <div class="swiper-slide">
-            <img src="./img/slider/pexels-photo-270637.jpeg" alt="">
-          </div>
+      <div class="swiper-slide slider-color">
+        <img src="./img/slider/agencia_slider.jpg" alt="">
+      </div>
 
-          <div>
-            <img src="./img/slider/4884841.jpg" alt="">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+      <div class="swiper-slide slider-color">
+        <img src="./img/slider/4884841.jpg" alt="">
       </div>
     </div>
-    <!-- end slider -->
-
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
   </div>
-  <!-- end header -->
-
-  <!-- description section -->
-  <div style="
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff22;
-  padding: 5rem 0;
-  " 
-  id="title" 
-  >
-    <div style="text-align: center;"> 
-      <h3 style="color:#a34ff7; font-size: 2.5rem; font-family: 'Open Sans', sans-serif;">¿Por qué es importante que tu
-        empresa esté en la web?</h3>
-      <div style="text-align: center;
-      font-family: 'Open Sans', sans-serif; 
-      margin-top: 3rem;
-      display: none;
-      "
-      id="div" 
-      >
-        <h4 style="
-        font-size: 1.8rem; 
-        ">Presencia en línea </h4>
-        <p>
-          En un mundo cada vez más conectado, tener una presencia en línea es esencial
-          para que individuos y empresas sean encontrados y reconocidos en el vasto panorama de internet.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- end description section -->
-
-  <!-- travelin -->
-  <!-- <div class="travelin">
-    <div>
-      <span>Soluciones a la Medida de tu empresa</span>
-    </div>
-    <div>
-      <span>Soluciones a la Medida de tu empresa</span>
-    </div> -->
-  </div>
-  <!-- end travelin -->
+  <!-- end slider -->
 
   <!-- contenido segundario -->
   <section class="informacion">
-    <div class="contenido-segundario">
-      <div>
+    <div>
+      <div class="title-contenido-segundario">
         <h3>¿Por qué es importante que tu empresa esté en la web?</h3>
-        <br>
-
-        <div>
-          <span>
-            <h4>Presencia en línea: </h4> En un mundo cada vez más conectado, tener una presencia en línea es esencial
-            para que individuos y empresas sean encontrados y reconocidos en el vasto panorama de internet.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Accesibilidad: </h4> Nuestro equipo de expertos en diseño y desarrollo trabaja en colaboración con los
-            clientes para crear sitios web intuitivos, atractivos y totalmente funcionales.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Credibilidad y profesionalismo: </h4> Una página web bien diseñada y funcional aumenta la credibilidad y
-            da una impresión de profesionalismo a clientes potenciales, socios comerciales y empleadores.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Alcance global: </h4> A través de internet, una página web puede alcanzar a audiencias globales,
-            expandiendo así el alcance de una empresa o proyecto más allá de las fronteras físicas.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Marketing digital: </h4> Una página web es una herramienta central en cualquier estrategia de marketing
-            digital, permitiendo la implementación de tácticas como SEO, publicidad en línea y contenido de valor para
-            atraer y retener clientes.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Venta en línea: </h4> Para las empresas, tener una tienda en línea a través de su página web les permite
-            vender productos o servicios directamente a los consumidores, ampliando su base de clientes y aumentando sus
-            ingresos.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Competitividad en el mercado: </h4> En muchos sectores, tener una presencia en línea sólida es una
-            necesidad para competir con otras empresas. Una página web bien desarrollada puede ayudar a mantenerse
-            competitivo y diferenciarse en el mercado.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Facilita el acceso a información clave: </h4> Las páginas web pueden servir como un recurso central para
-            proporcionar información clave, como horarios de atención, ubicación de la empresa, políticas de devolución,
-            preguntas frecuentes, entre otros detalles importantes para los clientes.
-          </span>
-        </div>
-
-        <div>
-          <span>
-            <h4>Apoyo a la imagen de marca: </h4> La estética, el diseño y el contenido de una página web pueden
-            contribuir significativamente a la construcción y fortalecimiento de la imagen de marca de una empresa,
-            transmitiendo sus valores, identidad y propósito de manera efectiva.
-          </span>
-        </div>
       </div>
-      <div>
-        <h3>¿Qué herramientas usamos?</h3>
-        <span>Desde la conceptualización hasta la implementación, nos especializamos en tecnologías de maquetación,
-          diseño y interactividad de gran rendimiento y con escalabilidad.</span>
+
+      <div class="contenido-section-1">
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+          <label for="btn-acordeon1">
+            <h4>Presencia en línea</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              En un mundo cada vez más conectado, tener una presencia en línea es esencial
+              para que individuos y empresas sean encontrados y reconocidos en el vasto panorama de internet.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+          <label for="btn-acordeon2">
+            <h4>Accesibilidad</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              Nuestro equipo de expertos en diseño y desarrollo trabaja en colaboración con los
+              clientes para crear sitios web intuitivos, atractivos y totalmente funcionales.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+          <label for="btn-acordeon3">
+            <h4>Credibilidad y profesionalismo</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              Una página web bien diseñada y funcional aumenta la credibilidad y
+              da una impresión de profesionalismo a clientes potenciales, socios comerciales y empleadores.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+          <label for="btn-acordeon4">
+            <h4>Alcance global</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              A través de internet, una página web puede alcanzar a audiencias globales,
+              expandiendo así el alcance de una empresa o proyecto más allá de las fronteras físicas.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+          <label for="btn-acordeon5">
+            <h4>Marketing digital</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              Una página web es una herramienta central en cualquier estrategia de marketing
+              digital, permitiendo la implementación de tácticas como SEO, publicidad en línea y contenido de valor para
+              atraer y retener clientes.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+          <label for="btn-acordeon6">
+            <h4>Venta en línea</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              Para las empresas, tener una tienda en línea a través de su página web les permite
+              vender productos o servicios directamente a los consumidores, ampliando su base de clientes y aumentando
+              sus
+              ingresos.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon7" class="btn-acordeon">
+          <label for="btn-acordeon7">
+            <h4>Competitividad en el mercado</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              En muchos sectores, tener una presencia en línea sólida es una
+              necesidad para competir con otras empresas. Una página web bien desarrollada puede ayudar a mantenerse
+              competitivo y diferenciarse en el mercado.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon8" class="btn-acordeon">
+          <label for="btn-acordeon8">
+            <h4>Facilita el acceso a información clave</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              Las páginas web pueden servir como un recurso central para
+              proporcionar información clave, como horarios de atención, ubicación de la empresa, políticas de
+              devolución,
+              preguntas frecuentes, entre otros detalles importantes para los clientes.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon">
+          <input type="checkbox" name="acordeon" id="btn-acordeon9" class="btn-acordeon">
+          <label for="btn-acordeon9">
+            <h4>Apoyo a la imagen de marca</h4>
+          </label>
+          <div class="contenido-acordeon">
+            <p>
+              La estética, el diseño y el contenido de una página web pueden
+              contribuir significativamente a la construcción y fortalecimiento de la imagen de marca de una empresa,
+              transmitiendo sus valores, identidad y propósito de manera efectiva.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <div class="separador"></div>
+
+  <!-- contenido segundario 2 -->
+  <section class="section-2">
+    <div>
+      <div class="title-section-2">
+        <h3>Todo lo que tu sitio <b> web </b>necesita</h3>
+      </div>
+      <div class="caja-servicios">
+        <div class="caja">
+          <h4>Diseño web profesional</h4>
+          <div class="info-caja">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, laborum.</p>
+          </div>
+        </div>
+
+        <div class="caja">
+          <h4>SEO</h4>
+          <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, laborum.</p>
+          </div>
+        </div>
+
+        <div class="caja">
+          <h4>Compatibilidad</h4>
+          <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, voluptatem?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja-servicios">
+        <div class="caja">
+          <h4>Navegacion</h4>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolor eligendi debitis et rem ullam
+              aliquid perferendis itaque? Alias?</p>
+          </div>
+        </div>
+
+        <div class="caja">
+          <h4>Seguridad y proteccion</h4>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, facilis.</p>
+          </div>
+        </div>
+
+        <div class="caja">
+          <h4>Hosting</h4>
+          <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, aspernatur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div>
+      <h3>¿Qué herramientas usamos?</h3>
+      <span>Desde la conceptualización hasta la implementación, nos especializamos en tecnologías de maquetación,
+        diseño y interactividad de gran rendimiento y con escalabilidad.</span>
+    </div>
+  </section>
+
   <!-- contacto -->
-  <section class="contacto">
+  <!-- <section class="contacto">
     <div>
       <h2>¡CONTACTANOS!</h2>
       <input type="email" placeholder="  EMAIL">
       <button type="submit" onclick="message(event)">ENVIAR</button>
     </div>
-  </section>
+  </section> -->
 
   <!-- footer -->
   <footer>
@@ -263,12 +336,10 @@
   <!-- message js -->
   <script src="js/event.js"></script>
   <!-- swiper js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="js/slider/swiper.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/d8cc8dd170.js" crossorigin="anonymous"></script>
-  <!-- section description -->
-  <script src="js/descriptionAnim.js"></script>
 </body>
 
 </html>
