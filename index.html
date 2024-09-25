@@ -10,7 +10,7 @@
   <link rel="icon" href="./img/icon/buclexIcon2.ico">
 
   <!-- custom css -->
-  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/index.css" />
   <!-- responsive css -->
   <link rel="stylesheet" href="css/responsive/home.css" />
   <!-- swiper  -->
@@ -18,57 +18,94 @@
 </head>
 
 <body>
-  <!-- header  nav / modificar el div que contiene el navbar header-->
+  <!-- header -->
   <div class="header-background">
     <header>
       <nav>
         <div class="navbar logo nav-menu">
-          <!-- logo -->
-          <h1 style="color: #a34ff7;">BUC<b style="color: #fff">LEX</b></h1>
-          <!-- menu -->
+          <h1 class="logo-main">BUC<b>LEX</b></h1>
           <ul>
-            <li><a href="index.html">inicio</a></li>
-            <li><a href="index.html" onclick="message(event)">servicios</li>
-            <li><a href="index.html">nuestros proyectos</a></li>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">servicios</li>
+            <li><a href="#">nuestros proyectos</a></li>
+            <li><a href="#">contacto</a></li>
           </ul>
-          <div class="btn-contact">
-            <button>Contacto</button>
-          </div>
         </div>
       </nav>
     </header>
   </div>
-  <!-- end header nav -->
+  <!-- end header -->
 
   <!-- slider -->
-  <div class="swiper">
+  <div class="swiper-horizontal">
     <div class="swiper-wrapper">
-      <div class="swiper-slide slider-color">
+      <div class="swiper-slide">
         <img src="./img/slider/pexels-photo-270637.jpeg" alt="">
       </div>
 
-      <div class="swiper-slide slider-color">
+      <div class="swiper-slide">
         <img src="./img/slider/agencia_slider.jpg" alt="">
       </div>
 
-      <div class="swiper-slide slider-color">
+      <div class="swiper-slide">
         <img src="./img/slider/4884841.jpg" alt="">
       </div>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
+    <div class="swiper-button-prev btn-slider"></div>
+    <div class="swiper-button-next btn-slider"></div>
+    <div hidden class="swiper-scrollbar"></div>
   </div>
   <!-- end slider -->
 
-  <!-- contenido segundario -->
-  <section class="informacion">
+  <!-- section prueba -->
+  <section class="sectionPrimary">
+    <div class="sectionPrimary-title">
+      <h2>¿Por qué es importante que tu empresa esté en la <b style="color: #E100FF;">web</b>?</h2>
+    </div>
     <div>
-      <div class="title-contenido-segundario">
-        <h3>¿Por qué es importante que tu empresa esté en la web?</h3>
+      <!-- slider primary section -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h4>Presencia en línea</h4>
+            <div class="primarySection-slider">
+              <p>En un mundo cada vez más conectado, tener una presencia en línea es esencial
+                para que individuos y empresas sean encontrados y reconocidos en el vasto panorama de internet.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h4>Accesibilidad</h4>
+            <div class="primarySection-slider">
+              <p>Nuestro equipo de expertos en diseño y desarrollo trabaja en colaboración con los
+                clientes para crear sitios web intuitivos, atractivos y totalmente funcionales.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h4>Credibilidad y profesionalismo</h4>
+            <div class="primarySection-slider">
+              <p>Una página web bien diseñada y funcional aumenta la credibilidad y 
+              da una impresión de profesionalismo a clientes potenciales, socios comerciales y empleadores.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h4>Alcance global</h4>
+            <div class="primarySection-slider">
+              <p>A través de internet, una página web puede alcanzar a audiencias globales,
+              expandiendo así el alcance de una empresa o proyecto más allá de las fronteras físicas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
+      <!-- end slider primary section -->
+    </div>
+  </section>
+  <!-- end section prueba -->
 
+  <!-- contenido segundario -->
+  <!-- <section class="informacion">
+    <div>
       <div class="contenido-section-1">
         <div class="acordeon">
           <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
@@ -195,9 +232,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <div class="separador"></div>
+  <!-- <div class="separador"></div> -->
 
   <!-- contenido segundario 2 -->
   <section class="section-2">
@@ -262,6 +299,8 @@
     </div>
   </section>
 
+  <div class="separador-footer"></div>
+
   <!-- contacto -->
   <!-- <section class="contacto">
     <div>
@@ -274,7 +313,6 @@
   <!-- footer -->
   <footer>
     <div class="footerContent">
-
       <div class="titleInfo">
         <div>
           <h4>Números de contacto</h4>
@@ -338,6 +376,7 @@
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="js/slider/swiper.js"></script>
+  <script src="js/helpers/slider2.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/d8cc8dd170.js" crossorigin="anonymous"></script>
 </body>
