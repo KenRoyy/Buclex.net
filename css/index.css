@@ -228,16 +228,13 @@ header {
   background-position: center; */
   /* color: #333; */
 
-
   /* background: linear-gradient(45deg,red,blue,green,black); */
   background: linear-gradient(45deg,#020024,#6a00ff,#ae0fb9,#6a00ff);
   background-size: 400%;
 
   color: var(--color-text-extraWhite);
+  animation: gradientAnimation 10s infinite;
 
-}
-.section-2:hover{
-  animation: gradientAnimation 10s ease;
 }
 
 @keyframes gradientAnimation{
@@ -251,6 +248,7 @@ header {
  font-size: 1.8rem;
 }
 .title-section-2 h3{
+  color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -40px;
   margin-bottom: 20px;
@@ -258,7 +256,6 @@ header {
 .title-section-2 b{
   color: var(--color-text-prmary);
 }
-/* corregir displey por grid para las cajas*/
 .caja-servicios{
   padding: 2rem 0;
   display: flex;
@@ -267,16 +264,15 @@ header {
 .caja{
   padding: 1.5rem 2rem;
   margin: 0 5px;
-  /* background: #fff; */
-  background-color: #eee;
+  background-color: #ddd;
   color: #000;
-  height: 230px;
-  width: 330px;
+  height: 290px;
+  width: 390px;
   border-radius: 10% 0%;
-  /* box-shadow: 10px 5px 5px #ccc; */
   box-shadow: 10px 5px 5px #222;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+  font-size: 1.05rem;
 }
 .caja h4{
   font-size: 1.4rem;
@@ -285,7 +281,7 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 .info-caja{
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* section-3  */
